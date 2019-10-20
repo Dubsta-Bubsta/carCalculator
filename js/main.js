@@ -19,7 +19,7 @@ $(document).ready(function () {
 		modelPrice += +$('input[name=transmission]:checked', '#autoForm').val();
 		modelPrice += +$('input[name=package]:checked', '#autoForm').val();
 
-		$('#modelPrice').text(addSpace(modelPrice) + 'рублей');
+		$('#modelPrice').text(addSpace(modelPrice) + 'rub');
 	}
 
 	//Making full string with car info
