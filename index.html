@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lesson</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div id="imgHolder" class="imgHolder">
+		<img src="img/black.png" alt="Автомобиль">
+		<div class="model-summary">
+			<div class="model-name">Kia Rio</div>
+			<div class="model-specs" id = "modelSpecs">1.6 - 6AT  Comfort</div>
+			<div class="model-price" id="modelPrice"></div>
+			<div class="model-price" id="modelPriceUSD"></div>
+			<div class="button">Заказать</div>
+			
+		</div>
+	</div>
+
+
+	
+	
+	<form id="autoForm">
+			<h2>Настрой авто для себя</h2>
+		<div class="row">
+			<div class="col-1-of-3">
+				<h4>Двигатель</h4>
+				<div class="form-block">
+					<input type="radio" name="engine" id="engine1400" value="624900" checked>
+					<label for="engine1400">1.4 л (100 л.с.)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="engine" id="engine1600" value="749900">
+					<label for="engine1600">1.4 л (123 л.с.)</label>
+				</div>
+			</div>
+
+			<div class="col-1-of-3">
+				<h4>Коробка передач</h4>
+				<div class="form-block">
+					<input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+					<label for="transmission6MT">Ручная, 6 ступеней (6МТ)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="transmission" id="transmission6AT" value="125000">
+					<label for="transmission6AT">Автомат, 6 ступеней (6АТ)</label>
+				</div>
+			</div>
+			<div class="col-1-of-3">
+				<h4>Дополнительные опции</h4>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageActive" value="0" checked>
+					<label for="packageActive">Active</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageActivePlus" value="85000">
+					<label for="packageActivePlus">Active Plus (кондиционер)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageComfort" value="130000">
+					<label for="packageComfort">Comfort (климатконтроль)</label>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="form-block">
+			<div class="colorSelector" id="colorSelector">
+				<div class="colorItem colorBlue" data-path="img/blue.png"></div>
+				<div class="colorItem colorRed" data-path="img/red.png"></div>
+				<div class="colorItem colorGrey" data-path="img/white.png"></div>
+				<div class="colorItem colorBlack" data-path="img/black.png"></div>
+				<div class="colorItem colorOrange" data-path="img/orange.png"></div>
+			</div>
+		</div>
+	</form>
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

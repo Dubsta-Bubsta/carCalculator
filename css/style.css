@@ -1,0 +1,73 @@
+*{
+	font-family: 'tahoma';
+}
+
+.colorSelector{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.colorItem{
+	margin: 20px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border: 1px solid #000;
+}
+.colorItem:hover{
+	cursor: pointer;
+}
+
+.colorBlue{
+	background: #1479E0;
+}
+
+.colorRed{
+	background: #FF0000;
+}
+.colorBlack{
+	background: #000000;
+}
+.colorWhitePure{
+	background: #FFFFFF;
+}
+.colorOrange{
+	background: #F79946;
+}
+
+.imgHolder{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.model-summary{
+	width: 400px;
+}
+
+.model-summary .button{
+	margin: 0 auto;
+	background: #2b60f1;
+	text-align: center;
+	padding: 5px;
+	width: 100px;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 18px;
+	border: 2px solid #fff;
+	transition: .5s;
+	
+}
+
+.model-summary .button:hover{
+	background: #fff;
+	color: #2b60f1;
+	border: 2px solid #2b60f1;
+	cursor: pointer;
+}
+
+
+#autoForm{
+	margin: 0 auto;
+	width: 500px;
+}
