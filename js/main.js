@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 	//Changing info on input change
 	$('#autoForm input').on('change', function () {
-		calculatePrice();
+        calculatePrice();
 		compileSpecs();
 		calculateUSD();
 	});
